@@ -1,0 +1,139 @@
+/*分类点css*/
+.main{
+	width: 1423px;
+	margin: 100px auto;
+	position: relative;
+}
+
+.main-read{
+	border: 1px solid #d4d4d4;
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+
+.main-read h2{
+	border-bottom: 2px solid #449f1b;
+	height: 35px;
+	overflow: hidden;
+}
+
+.main-read h2 strong{
+	width: 100px;
+	height:35px;
+	float: left;
+	
+	font-weight: bold;
+}
+.read-title{
+	float: right;
+	padding-right: 15px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #6da815;
+	line-height: 36px;
+}
+.read-title a{
+	color: #6da815;
+	padding: 0 5px;
+}
+
+.manhua{
+	padding: 0 20px 30px;
+	width: 1142px;
+	overflow: hidden;
+}
+
+.manhua-cf{
+	width: 1142px;
+	background: #0cc;
+}
+.manhua-cf li {
+	float: left;
+	padding: 20px 0 20px 0;
+	height: 146px;
+}
+.manhua-cf li>a:hover{
+	border:2px solid orange;
+}
+
+.manhua-cf li>a{
+	
+	height: 137px;
+	border:2px solid #c5c5c5;
+	padding: 0px;
+	float: left;
+	margin-right: 20px;
+}
+
+.manhua-info{
+	float: left;
+	color: #666;
+	width: 250px;
+	line-height: 22px;
+}
+
+.info-4 a {
+	color: #14674b;
+}
+
+.info {
+	color: #eee;
+}
+
+.info-5 a{
+	color: #008aea;
+}
+
+* {
+			margin: 0;
+			padding: 0;
+		}
+
+		html,body {
+			height: 100%;
+		}
+
+		
+
+		#modal {
+			top: 0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.5);
+			position: fixed;
+		}
+
+		#container {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: calc(50% - 100px);
+			bottom: calc(50% - 100px); 
+			left: calc(50% - 100px);
+			right: calc(50% - 100px);
+		}
+
+		#container a img{
+			display: block;
+			position: absolute;
+			top: calc(50% - 52px);
+			bottom: calc(50% - 52px); 
+			left: calc(50% - 52px);
+			right: calc(50% - 52px);
+			
+		}
+
+
+
+		.dujia-input{
+			height:25px;
+			border: 1px solid orange;
+			margin-top: 3px;
+			line-height: 25px;
+			border-radius: 5px;
+		}
+
+		

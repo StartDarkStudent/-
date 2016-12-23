@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>黑夜起行</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/everyone.css">
+	<link rel="stylesheet" type="text/css" href="css/fenlei.css">
+
+</head>
+<body  ng-controller="list">
+	<!-- 头部开始 -->
+	<head>
+		<!-- 初始栏 -->
+		<div class="head" id="head">
+			<!-- 第一部分logo栏 -->
+			<div class="head-logo">
+				<div class="head-logo-1">
+					<!-- head左边图标 -->
+					<div class="head-logo-left">
+						<div class="logo-img">
+							<a href="#">
+								<img src="img/3.png" alt="">
+							</a>
+						</div>
+					</div>
+					<!-- head中间部分 -->
+					<div class="head-logo-middle">
+						<div class="head-logo-middle-1">
+							<div class="head-logo-middle-2">
+								<input type="text" class="head-logo-middle-input" placeholder="angulajs实现前端搜索" ng-model="keywords">
+							</div>
+							<div class="icon icon-search">
+								
+							</div>
+							
+						</div>
+						<ul>
+							<li><a href="#">守护者传说</a></li>
+							<li><a href="#">镖人</a></li>
+							<li><a href="#">镇魂街</a></li>
+							<li><a href="#">一条狗/外星人</a></li>
+						</ul>
+					</div>
+					<!-- 右边图标部分 -->
+					<a href="#" class="head-logo-right">
+						<img src="img/1.png" alt="">
+					</a>
+					
+				</div>
+			</div>
+			<!-- 第一部分logo栏结束 -->
+			<!-- 导航栏开始 -->
+			<div class="head-nav">
+				<!-- 导航栏结束 -->
+				<div class="head-nav-main">
+					<!-- 导航 左部-->
+					<div class="head-nav-left">
+						<ul>
+							<li><a href="index.html">首页</a></li>
+							<li><a href="fenlei.html"  class="shouye">分类</a></li>
+							<li><a href="register.html">用户中心</a></li>
+							<li><a href="#">漫友交流</a></li>
+							<li><a href="#">关于我们</a></li>
+						</ul>
+					</div>
+					<!-- 我要投稿 -->
+					<div class="head-nav-right">
+						<div class="arrow">
+							<img src="img/arrow.png" alt="">
+						</div>
+						<a href="#"><span>我要投稿</span></a>
+						<div class="head-nav-dl">
+							<a href="login.html">登陆</a>
+							<span></span>
+							<a href="register.html">注册</a>
+						</div>
+					</div>
+					<div class="head-nav-search">
+						<a href="#">Do you konw me?</a>
+					</div>
+				</div>
+			</div>
+			<!-- 导航栏结束 -->
+		</div>
+		
+	</head>
+	<!-- 头部结束 -->
+
+	<!-- 左侧板开始-->
+		<div class="right">
+				<ul>
+					<li id="right-daohang"><a href="#head">导航栏</a></li>
+					<li id="right-daohang1"><a href="#recommend">强档推荐</a></li>
+					<li id="right-daohang2"><a href="#comic">漫画分类</a></li>
+					
+				</ul>
+		</div>
+	<!-- 左侧边结束 -->
+		
+	<!-- 右侧板开始 -->
+		<div class="left">
+				<ul>
+					<li><a href="#">fggff</a></li>
+					<li><a href="#">二</a></li>
+					<li><a href="#">三</a></li>
+					<li class="left-li"><a href="#" >四</a></li>
+				</ul>
+		</div>
+	<!-- 右侧板结束 -->
+	<!-- 漫画分类开始 -->
+	<div class="main clear">
+		<!-- 列表开始 -->
+		<div class="main-read">
+			<!-- 标题开始 -->
+			<h2>
+				<strong>独家推荐</strong>
+				<div class="read-title">
+					<a href="#">付费漫画</a>
+					<a href="#">签约漫画</a>
+					<a href="#">完结漫画</a>
+				</div>
+			</h2>
+			<!-- 标题结束 -->
+			<!-- 漫画开始 -->
+			<div class="manhua">
+				<ul class="manhua-cf" ng-repeat="item in data |filter:{name:keywords}">
+					<li class="clear">
+						<a href="#" ><img src="img/u17-{{item.id}}.jpg" alt="" id="motai"></a>
+						<div class="manhua-info">
+							<a href="#" class="info-1">{{item.name}}</a>
+							<a href="#" class="info-2">
+								<img src="img/u17-15.gif" alt="">
+							</a>
+							&nbsp;
+							<a href="#" class="info-3">
+								<img src="img/u17-16.gif" alt="">
+							</a>
+							<p class="info-4">
+								作者:
+								<a href="#">{{item.editer}}</a>
+							</p>
+							<p class="info-5">
+								最新章节:
+								<a href="#">书--下章</a>
+								(23分钟前:)
+							</p>
+							<p class="info-6">
+								<span>简介：</span>
+								那些荒诞不仅的都市传说..
+							</p>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- 漫画结束 -->
+		</div>
+		<!-- 列表结束 -->
+	</div>
+
+
+
+	<!-- 底部栏目开始 -->
+		<div class="footer" id="footer">
+			<div class="footer-main">
+				<div class="main-ul">
+					<!-- 二维码 -->
+					<ul>
+						<li><img src="img/ew-2.png" alt="">
+							<p style="color:#fff">起行漫画客户端</p></li>
+						<li><img src="img/ew-2.png" alt=""><p style="color:#fff">起行漫画移动端</p>
+						</li>
+					</ul>
+					<p class="fotter-p">
+						<a href="#">网站地图</a>
+						<a href="#">官方微博</a>
+						<a href="#">邮箱推荐</a>
+						<a href="#">服务协议</a>
+						<a href="#">反馈通道</a>
+						<a href="#">侵权反馈</a>
+						<a href="#">站内需要</a>
+					</p>
+					<p class="fotter-p1">
+						Copyright 
+						<span>@</span>
+						1998-2016 XiuKan
+					</p>
+					<p class="fotter-p2">
+						起行动漫网
+					</p>
+				</div>
+				<div class="footer-border">
+					
+				</div>
+			</div>
+		</div>
+	<!-- 底部栏目结束 -->
+
+	<div id="modal" style="display:none;">
+		<div id="container" >
+			
+			<ul id="videoList">
+		<li><a href="javascript:;" data-video="demo.mp4"><span style="color:orange;">第一集</span></a></li>
+		<li><a href="javascript:;" data-video="demo.ogg"><span style="color:orange;">第二集</span></a></li>
+	</ul>
+
+	<video src="" controls width="300" id="myVideo">
+		浏览器不支持html5视频格式
+	</video>
+		</div>
+	</div>
+
+
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/fenlei.js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script type="text/javascript">
+		layer.msg('angulajs实现前端搜索以及内容绑定功能  还未写响应式布局 点击图片可播放视频');
+	</script>
+		
+</body>
+</html>

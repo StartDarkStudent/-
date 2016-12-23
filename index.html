@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>黑夜起行</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/everyone.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fenlei.css">
+
+</head>
+<body  ng-controller="list">
+	<!-- 头部开始 -->
+	<head>
+		<!-- 初始栏 -->
+		<div class="head" id="head">
+			<!-- 第一部分logo栏 -->
+			<div class="head-logo">
+				<div class="head-logo-1">
+					<!-- head左边图标 -->
+					<div class="head-logo-left">
+						<div class="logo-img">
+							<a href="#">
+								<img src="img/3.png" alt="">
+							</a>
+						</div>
+					</div>
+					<!-- head中间部分 -->
+					<div class="head-logo-middle">
+						<div class="head-logo-middle-1">
+							<div class="head-logo-middle-2">
+								<input type="text" class="head-logo-middle-input" placeholder="排行榜运用ajax技术导入 并自动翻页 并不是轮播 自动翻滚 轮播图">
+							</div>
+							<div class="icon icon-search">
+								
+							</div>
+							
+						</div>
+						<ul>
+							<li><a href="#">守护者传说</a></li>
+							<li><a href="#">镖人</a></li>
+							<li><a href="#">镇魂街</a></li>
+							<li><a href="#">一条狗/外星人</a></li>
+						</ul>
+					</div>
+					<!-- 右边图标部分 -->
+					<a href="#" class="head-logo-right">
+						<img src="img/1.png" alt="">
+					</a>
+					
+				</div>
+			</div>
+			<!-- 第一部分logo栏结束 -->
+			<!-- 导航栏开始 -->
+			<div class="head-nav">
+				<!-- 导航栏结束 -->
+				<div class="head-nav-main">
+					<!-- 导航 左部-->
+					<div class="head-nav-left">
+						<ul>
+							<li><a href="index.html" class="shouye">首页</a></li>
+							<li><a href="fenlei.html">分类</a></li>
+							<li><a href="register.html">用户中心</a></li>
+							<li><a href="#">漫友交流</a></li>
+							<li><a href="#">关于我们</a></li>
+						</ul>
+					</div>
+					<!-- 我要投稿 -->
+					<div class="head-nav-right">
+						<div class="arrow">
+							<img src="img/arrow.png" alt="">
+						</div>
+						<a href="#"><span>我要投稿</span></a>
+						<div class="head-nav-dl">
+							<a href="login.html">登陆</a>
+							<span></span>
+							<a href="register.html">注册</a>
+						</div>
+					</div>
+					<div class="head-nav-search">
+						<a href="#">Do you konw me?</a>
+					</div>
+				</div>
+			</div>
+			<!-- 导航栏结束 -->
+		</div>
+		
+	</head>
+	<!-- 头部结束 -->
+
+	<!-- 左侧板开始-->
+		<div class="right">
+				<ul>
+					<li id="right-daohang"><a href="#head">导航栏</a></li>
+					<li id="right-daohang1"><a href="#recommend">强档推荐</a></li>
+					<li id="right-daohang2"><a href="#comic">漫画分类</a></li>
+					<li id="right-daohang3"><a href="#dujia">独家动画</a></li>
+					
+				</ul>
+		</div>
+	<!-- 左侧边结束 -->
+		
+
+	<!-- 主栏目开始 -->
+		<div class="main">
+			<!-- banner开始 -->
+				<div class="banner">
+					<!-- 轮播图开始 -->
+					<div class="banner-swiper">
+						<div class="swiper">
+							<ul>
+								<li><a href="#">
+									<div class="forward">
+										<img src="img/swiper-3.jpg" alt=""></div>
+									<div class="back back-1">									
+										<p>1111111111111111111111111111111111111111
+										</p>
+										
+									</div>
+								</a></li>
+
+								<li><a href="#"><div class="forward"><img src="img/swiper-5.jpg" alt=""></div>
+									<div class="back back-2">
+									
+									<p>222222222222222222222222222
+									</p>
+									</div></a></li>
+
+								<li><a href="#"><div class="forward"><img src="img/swiper-3.jpg" alt=""></div>
+									<div class="back back-3">
+									
+									<p>日本漫画家岸本齐史作品《火影忍者》中男主角。因为身上封印着邪恶的九尾妖狐，无父无母的他受尽了村人的冷眼与歧视，他下定决心要成为第六代火影，让所有人都认同他的存在。</p>
+									
+									</div></a></li>
+
+								<li id="last"><a href="#"><div class="forward"><img src="img/swiper-8.jpg" alt=""></div>
+									<div class="back back-4">
+									
+									<p>日本漫画家岸本齐史作品《火影忍者》中男主角。因为身上封印着邪恶的九尾妖狐，无父无母的他受尽了村人的冷眼与歧视，他下定决心要成为第六代火影，让所有人都认同他的存在。</p>
+									</div></a></li>
+
+							</ul>
+						</div>
+						<div class="hr">
+							<div class="hr-bird">
+								<img src="img/gif-1.gif" alt="">
+							</div>
+						</div>
+					</div>
+					<!-- 轮播图结束 -->
+					<!-- 排行榜开始 -->
+					<div class="banner-paihang">
+						<div class="paihang-top clear">
+							<h2>热门排行</h2>
+							
+								<ul>
+								<li id="paihang1" class="paihang_highlight"><a href="#">热血</a></li>
+								<li id="paihang2"><a href="#">爱情</a></li>
+								<li id="paihang3"><a href="#">校园</a></li>
+								<li id="paihang4"><a href="#">冒险</a></li>
+							</ul>
+							
+						</div>
+						<div class="paihang-middle">
+							<div class="paihang-middle-tab clear" >
+								<ol name="ol1" class="ol1">
+									<!-- <li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li> -->
+								</ol>
+								<ol id="paihang-middle-ol" name="ol2" class="ol2">
+									<!-- <li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li> -->
+								</ol>
+							</div>
+							<!-- <div class="paihang-middle-tab clear" style="display:none;">
+								<ol>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+								</ol>
+								<ol id="paihang-middle-ol">
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+								</ol>
+							</div>
+							<div class="paihang-middle-tab clear" style="display:none;">
+								<ol>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+								</ol>
+								<ol id="paihang-middle-ol">
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+								</ol>
+							</div>
+							<div class="paihang-middle-tab clear" style="display:none;">
+								<ol>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+								</ol>
+								<ol id="paihang-middle-ol">
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub id="paihang-sub">1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+									<li><sub>1</sub>
+										<a href="#">守护者传说</a>
+										<i class="paihang-middle-i"></i>
+									</li>
+								</ol>
+							</div>
+ -->
+							
+						</div>
+						<div class="paihang-border">
+							
+						</div>
+						<div class="paihang-footer">
+							<ul>
+								<li><a href="#">镇魂街</a></li>
+								<li><a href="#">镇魂街</a></li>
+								<li><a href="#">镇魂街</a></li>
+								<li><a href="#">镇魂街</a></li>
+						</ul>
+						</div>
+					</div>
+					<!-- 排行榜结束 -->
+				</div>
+			<!-- banner结束 -->
+			<!-- 作品栏目开始 -->
+				<div class="recommend" id="recommend">
+					<!-- 分类 -->
+					<div class="recommend-h2">
+						<div class="qiangdang">
+							<h1>强档</h1>
+							<h2>推荐</h2>
+						</div>
+						<p id="h2-title">
+							<span>
+								<a href="#"id="h2-hight">全部</a>
+								<a href="#">热血</a>
+								<a href="#">爱情</a>
+								<a href="#">奇幻</a>
+							</span>
+							&nbsp;
+							<a href="#">[规则]</a>
+						</p>
+						<a href="#">更多></a>
+					</div>
+					<!-- 轮播 -->
+					<div class="recommend-content">
+						<a href="" id="prev" class="arrow-1"><</a>
+						<a href="" id="next" class="arrow-1">></a>
+						<div class="slider-wrapper">
+							<div class="content-scroll" style="left: 0px;">
+							<ul>
+								<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-1.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-2.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-3.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-4.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-5.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-6.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-7.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-8.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-9.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-10.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-11.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+              			  		<li>
+                                                            
+                                    <a href="" class="scroll-a1"><img src="img/u17-12.jpg"></a>
+                    				<a href="" class="scroll-a2">
+                                    星海浮梦                              </a>
+                    				<span>霸道总裁与小透明</span>
+              			  		</li>
+							</ul>
+						</div>
+						</div>
+						
+					</div>
+				</div>
+			<!-- 作品栏目结束 -->
+			<!-- 漫画类开始 -->
+				<div class="comic clear" id="comic">
+					<div class="comic-top clear">
+						<span>日常</span>
+						<h2>漫画娘推荐</h2>
+						<a href="#">更多分类
+						<span>>></span></a>
+					</div>
+					<div class="comic-content claear">
+						<!-- 左边日常栏目 -->
+						<div class="content-left">
+							<div class="content-left-tit clear">
+								<h3>最近上架</h3>
+							</div>
+
+							<div class="content-left-tab">
+								<ul>
+									<li><a href="#"><img src="img/content-1.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p>
+									<h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p>
+									</li>
+									<li><a href="#"><img src="img/content-2.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-3.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-4.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-5.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-3.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+								</ul>
+							</div>
+							<div class="content-left-tit clear">
+								<h3>最近上架</h3>
+							</div>
+
+							<div class="content-left-tab">
+								<ul>
+									<li><a href="#"><img src="img/content-1.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p>
+									<h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p>
+									</li>
+									<li><a href="#"><img src="img/content-2.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-3.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-4.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-5.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-3.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+								</ul>
+							</div>
+							<div class="content-left-tit clear">
+								<h3>最近上架</h3>
+							</div>
+
+							<div class="content-left-tab">
+								<ul>
+									<li><a href="#"><img src="img/content-1.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p>
+									<h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p>
+									</li>
+									<li><a href="#"><img src="img/content-2.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-3.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-4.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-5.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-3.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p>
+									<h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+								</ul>
+							</div>
+							<div class="content-left-tit clear">
+								<h3>最近上架</h3>
+							</div>
+
+							<div class="content-left-tab">
+								<ul>
+									<li><a href="#"><img src="img/content-1.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p>
+									<h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p>
+									</li>
+									<li><a href="#"><img src="img/content-2.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-3.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-4.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-5.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+									<li><a href="#"><img src="img/content-3.jpg" alt=""></a>
+									<p>
+										<a href="#" id="gengxin"><span id="gengxin-span">&nbsp;&nbsp;更新至第3话</span></a>
+									</p><h5><a href="#" id="danao">大闹天宫</a></h5>
+									<p id="jianjie">吃俺老孙一棒</p>
+									<p id="leixing"><a href="#">奇幻</a>
+										<a href="#">热血</a></p></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 左边日常栏目结束 -->
+						<!-- 右边讨论栏目开始 -->
+						<div class="content-right">
+							<div class="jinri">
+								<div class="jinri-top">
+									<div class="jinri-top-left">
+										<a href="#"><img src="img/jinri-1.jpg" alt=""></a>
+									</div>
+									<div class="jinri-top-right">
+										<ul>
+											<li><a href="#">地区：中国 大陆</a></li>
+											<li><a href="#">作者 ： 无名氏</a></li>
+											<li><a href="#">奇幻 / 热血</a></li>
+										</ul>
+										<h2>评分：9.8</h2>
+									</div>
+								</div>
+								
+								<div class="jinri-bottom">
+									
+								</div>
+							</div>
+							<div class="jinri">
+								<div class="jinri-top">
+									<div class="jinri-top-left">
+										<a href="#"><img src="img/jinri-1.jpg" alt=""></a>
+									</div>
+									<div class="jinri-top-right">
+										<ul>
+											<li><a href="#">地区：中国 大陆</a></li>
+											<li><a href="#">作者 ： 无名氏</a></li>
+											<li><a href="#">奇幻 / 热血</a></li>
+										</ul>
+										<h2>评分：9.8</h2>
+									</div>
+								</div>
+								
+								<div class="jinri-bottom">
+									
+								</div>
+							</div>
+							<div class="jinri">
+								<div class="jinri-top">
+									<div class="jinri-top-left">
+										<a href="#"><img src="img/jinri-1.jpg" alt=""></a>
+									</div>
+									<div class="jinri-top-right">
+										<ul>
+											<li><a href="#">地区：中国 大陆</a></li>
+											<li><a href="#">作者 ： 无名氏</a></li>
+											<li><a href="#">奇幻 / 热血</a></li>
+										</ul>
+										<h2>评分：9.8</h2>
+									</div>
+								</div>
+								
+								<div class="jinri-bottom">
+									
+								</div>
+							</div>
+							<div class="jinri">
+								<div class="jinri-top">
+									<div class="jinri-top-left">
+										<a href="#"><img src="img/jinri-1.jpg" alt=""></a>
+									</div>
+									<div class="jinri-top-right">
+										<ul>
+											<li><a href="#">地区：中国 大陆</a></li>
+											<li><a href="#">作者 ： 无名氏</a></li>
+											<li><a href="#">奇幻 / 热血</a></li>
+										</ul>
+										<h2>评分：9.8</h2>
+									</div>
+								</div>
+								
+								<div class="jinri-bottom">
+									
+								</div>
+							</div>
+						</div>
+						<!-- 右边讨论栏目结束 -->
+					</div>
+				</div>
+			<!-- 漫画类结束 -->
+		</div>
+	<!-- 主栏目结束 -->
+
+<!-- 漫画分类开始 -->
+	<div class="main clear dujia" id="dujia">
+		<!-- 列表开始 -->
+		<div class="main-read">
+			<!-- 标题开始 -->
+			<h2>
+				<strong>独家动画</strong>
+				<input type="" placeholder="请输入作者/作品" ng-model="keywords" class="dujia-input">
+				<div class="read-title">
+					<a href="#">付费漫画</a>
+					<a href="#">签约漫画</a>
+					<a href="#">完结漫画</a>
+				</div>
+			</h2>
+			<!-- 标题结束 -->
+			<!-- 漫画开始 -->
+			<div class="manhua">
+				<ul class="manhua-cf" ng-repeat="item in data |filter:{name:keywords}">
+					<li class="clear">
+						<a href="#" ><img src="img/u17-{{item.id}}.jpg" alt="" id="motai"></a>
+						<div class="manhua-info">
+							<a href="#" class="info-1">{{item.name}}</a>
+							<a href="#" class="info-2">
+								<img src="img/u17-15.gif" alt="">
+							</a>
+							&nbsp;
+							<a href="#" class="info-3">
+								<img src="img/u17-16.gif" alt="">
+							</a>
+							<p class="info-4">
+								作者:
+								<a href="#">{{item.editer}}</a>
+							</p>
+							<p class="info-5">
+								最新章节:
+								<a href="#">书--下章</a>
+								(23分钟前:)
+							</p>
+							<p class="info-6">
+								<span>简介：</span>
+								那些荒诞不仅的都市传说..
+							</p>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- 漫画结束 -->
+		</div>
+		<!-- 列表结束 -->
+	</div>
+
+
+	<!-- 底部栏目开始 -->
+		<div class="footer" id="footer">
+			<div class="footer-main">
+				<div class="main-ul">
+					<!-- 二维码 -->
+					<ul>
+						<li><img src="img/ew-2.png" alt="">
+							<p style="color:#fff">起行漫画客户端</p></li>
+						<li><img src="img/ew-2.png" alt=""><p style="color:#fff">起行漫画移动端</p>
+						</li>
+					</ul>
+					<p class="fotter-p">
+						<a href="#">网站地图</a>
+						<a href="#">官方微博</a>
+						<a href="#">邮箱推荐</a>
+						<a href="#">服务协议</a>
+						<a href="#">反馈通道</a>
+						<a href="#">侵权反馈</a>
+						<a href="#">站内需要</a>
+					</p>
+					<p class="fotter-p1">
+						Copyright 
+						<span>@</span>
+						1998-2016 XiuKan
+					</p>
+					<p class="fotter-p2">
+						起行动漫网
+					</p>
+				</div>
+				<div class="footer-border">
+					
+				</div>
+			</div>
+		</div>
+	<!-- 底部栏目结束 -->
+
+
+	<div id="modal" style="display:none;">
+		<div id="container">
+			
+			<ul id="videoList">
+		<li><a href="javascript:;" data-video="demo.mp4"><span style="color:orange;">第一集</span></a></li>
+		<li><a href="javascript:;" data-video="demo.ogg"><span style="color:orange;">第二集</span></a></li>
+	</ul>
+
+	<video src="" controls width="300" id="myVideo">
+		浏览器不支持html5视频格式
+	</video>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script type="text/javascript" src="js/fenlei.js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+	
+	<script type="text/javascript">
+		layer.msg('排行榜运用ajax技术导入 并自动翻页 并不是轮播 自动翻滚 轮播图   mvc框架 v根据m的数据显示内容 控制操作有c来传接 angulajs实现前端搜索以及内容绑定功能  还未写响应式布局 点击图片可播放视频' );
+	</script>
+</body>
+</html>
